@@ -1,0 +1,17 @@
+.img {
+  width: 301px;
+  height: 389px;
+  background-image: url("../img/seq-a.png");
+  animation: play 5s steps(120) infinite;
+}
+
+@keyframes play {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0px -46680px;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */
