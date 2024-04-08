@@ -1,14 +1,57 @@
-    .img {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+
+  .background {
+    position: relative;
+    width: 930px;
+    height: 770px;
+    background-image: url('../img/bg-exo2.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mask-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/mask.png');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: left -250px;
+      filter: opacity(70%);
+    }
+
+    .half {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url('../img/left-part.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+    }
+
+    .fire-img {
       width: 301px;
       height: calc(46680px / 120);
       background-image: url('../img/seq-a.png');
-      animation: play 5s steps(120) infinite;
+      background-position: 0 0;
+      z-index: 2;
+      transform: translateX(-70px);
     }
-    @keyframes play {
-        from {
-          background-position: 0px 0px;
-        }
-        to {
-          background-position: 0px -46680px;
-        }
-    }
+  }
+}
+
